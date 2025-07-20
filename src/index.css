@@ -116,5 +116,27 @@
   }
   body {
     @apply bg-background text-foreground;
+    /* Prevent mobile overflow */
+    overflow-x: hidden;
+    /* Use dynamic viewport height for mobile */
+    height: 100vh;
+    height: 100dvh;
+  }
+  
+  /* Ensure html and body don't cause overflow */
+  html {
+    height: 100vh;
+    height: 100dvh;
+    overflow-x: hidden;
+  }
+  
+  /* Mobile-specific viewport handling */
+  @media (max-width: 768px) {
+    body {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      height: 100dvh;
+    }
   }
 }

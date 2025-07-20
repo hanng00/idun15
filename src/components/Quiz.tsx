@@ -8,7 +8,7 @@ export const Quiz = () => {
   const { isStarted, isCompleted, startQuiz } = useQuizStore();
 
   return (
-    <div className="min-h-screen">
+    <div className="h-full">
       <AnimatePresence mode="wait">
         {!isStarted ? (
           <LandingScreen key="landing" onStart={startQuiz} />

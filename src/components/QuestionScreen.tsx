@@ -26,7 +26,7 @@ export const QuestionScreen = () => {
   const hasSubmitted = showExplanation;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-100 to-blue-100 flex items-center justify-center p-4">
+    <div className="h-full min-h-screen bg-gradient-to-br from-pink-100 via-purple-100 to-blue-100 flex items-center justify-center p-4">
       <ParticleEffect 
         isActive={showExplanation && isCorrect} 
         count={isCorrect ? 25 : 10} 
